@@ -1,0 +1,74 @@
+body {
+  background-color: #dff3df;
+  font-family: "Press Start 2P", cursive, monospace;
+  color: #2f4f2f;
+}
+
+h1, h5 {
+  color: #228b22;
+  text-shadow: 2px 2px #c8e6c9;
+}
+
+/* Navbar-Tabs */
+.nav-tabs .nav-link {
+  border: 2px solid #228b22;
+  background-color: #e8f5e9;
+  color: #2f4f2f;
+  font-size: 12px;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #a5d6a7;
+  color: #fff;
+  border-bottom: 2px solid #388e3c;
+}
+
+/* Karten */
+.card {
+  border: 3px solid #388e3c;
+  border-radius: 0;
+  background-color: #fafafa;
+  box-shadow: 4px 4px #81c784;
+}
+
+.card img {
+  border-bottom: 3px solid #388e3c;
+  image-rendering: pixelated;
+}
+
+/* Buttons / Badges */
+.badge {
+  border-radius: 0;
+  font-size: 10px;
+  padding: 6px;
+  text-transform: uppercase;
+  box-shadow: 2px 2px #c8e6c9;
+}
+
+.badge.bg-success {
+  background-color: #4caf50 !important;
+}
+
+.badge.bg-info {
+  background-color: #81d4fa !important;
+}
+
+/* Filterfelder */
+.form-control, .form-select {
+  border: 2px solid #388e3c;
+  border-radius: 0;
+  background-color: #e8f5e9;
+  font-size: 12px;
+  box-shadow: 2px 2px #c8e6c9;
+}
+
+.form-control:focus, .form-select:focus {
+  outline: none;
+  border-color: #1b5e20;
+  box-shadow: 3px 3px #a5d6a7;
+}
+
+/* Pixelart Cursor */
+body, button, input, select {
+  cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat795.cur), auto !important;
+}

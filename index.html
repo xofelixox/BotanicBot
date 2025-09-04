@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BotanicBot</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container my-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="plant-tab" data-bs-toggle="tab" data-bs-target="#plant" type="button" role="tab">
+                Pflanzen
+            </button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="sicknesses-tab" data-bs-toggle="tab" data-bs-target="#sicknesses" type="button" role="tab">
+                Krankheiten
+            </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="myTabContent">
+            <!-- Pflanzen-Tab -->
+            <div class="tab-pane fade show active" id="plant" role="tabpanel">
+                <div class="container my-5 plant-container">
+                    <h1 class="mb-4">Meine Pflanzen</h1>
+
+                    <!-- Filterleiste -->
+                    <div class="row mb-4">
+                        <div class="col-md-6 mb-2">
+                            <input 
+                            type="text" 
+                            id="plantSearch" 
+                            class="form-control" 
+                            placeholder="Nach Pflanze oder Tag suchen...">
+                        </div>
+                        <div class="col-md-6 mb-2">
+                            <select id="plantFilter" class="form-select">
+                            <option value="">Filter wählen...</option>
+                            <option value="Wohnzimmer">Wohnzimmer</option>
+                            <option value="Bad">Bad</option>
+                            <option value="Küche">Küche</option>
+                            <option value="Zimmerpflanze">Zimmerpflanze</option>
+                            <option value="Sukkulente">Sukkulente</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row row-cols-1 row-cols-md-3 g-4" id="plantCards">
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://picsum.photos/300/200" class="card-img-top" alt="Pflanze">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ficus Benjamina</h5>
+                                    <p class="card-text">
+                                        <strong>Custom Name:</strong> Wohnzimmer-Ficus <br>
+                                        <strong>Ort:</strong> Wohnzimmer <br>
+                                        <strong>Gießen:</strong> alle 7 Tage
+                                    </p>
+                                    <span class="badge bg-success">Wohnzimmer</span>
+                                    <span class="badge bg-info">Zimmerpflanze</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://picsum.photos/300/200" class="card-img-top" alt="Pflanze">
+                                <div class="card-body">
+                                    <h5 class="card-title">Aloe Vera</h5>
+                                    <p class="card-text">
+                                        <strong>Custom Name:</strong> Aloe Vera (Bad) <br>
+                                        <strong>Ort:</strong> Bad <br>
+                                        <strong>Gießen:</strong> alle 7 Tage
+                                    </p>
+                                    <span class="badge bg-success">Bad</span>
+                                    <span class="badge bg-info">Zimmerpflanze</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://picsum.photos/300/200" class="card-img-top" alt="Pflanze">
+                                <div class="card-body">
+                                    <h5 class="card-title">Aloe Vera</h5>
+                                    <p class="card-text">
+                                        <strong>Custom Name:</strong> Aloe Vera (Wohnzimmer) <br>
+                                        <strong>Ort:</strong> Wohnzimmer <br>
+                                        <strong>Gießen:</strong> alle 7 Tage
+                                    </p>
+                                    <span class="badge bg-success">Wohnzimmer</span>
+                                    <span class="badge bg-info">Zimmerpflanze</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://picsum.photos/300/200" class="card-img-top" alt="Pflanze">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ficus Benjamina</h5>
+                                    <p class="card-text">
+                                        <strong>Custom Name:</strong> Bad-Ficus <br>
+                                        <strong>Ort:</strong> Bad <br>
+                                        <strong>Gießen:</strong> alle 7 Tage
+                                    </p>
+                                    <span class="badge bg-success">Bad</span>
+                                    <span class="badge bg-info">Sukkulente</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100">
+                                <img src="https://picsum.photos/300/200" class="card-img-top" alt="Pflanze">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arschpflanze</h5>
+                                    <p class="card-text">
+                                        <strong>Custom Name:</strong> Küchenblume <br>
+                                        <strong>Ort:</strong> Küche <br>
+                                        <strong>Gießen:</strong> alle 7 Tage
+                                    </p>
+                                    <span class="badge bg-success">Küche</span>
+                                    <span class="badge bg-info">Sukkulente</span>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+            <!-- Krankheiten-Tab -->
+            <div class="tab-pane fade" id="sicknesses" role="tabpanel">
+                <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                            <h5 class="card-title text-danger">Mehltau</h5>
+                            <p class="card-text">
+                                <strong>Symptome:</strong> Weißer Belag auf den Blättern, welkes Aussehen.<br>
+                                <strong>Betroffene Pflanzen:</strong> Rosen, Kräuter, Zimmerpflanzen.<br>
+                                <strong>Lösung:</strong> Befallene Blätter entfernen, Pflanze weniger feucht halten, ggf. Fungizid.
+                            </p>
+                            <span class="badge bg-warning text-dark">Pilzkrankheit</span>
+                            <span class="badge bg-success">Zimmerpflanze</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                            <h5 class="card-title text-danger">Spinnmilben</h5>
+                            <p class="card-text">
+                                <strong>Symptome:</strong> Feine Gespinste auf Blättern, gelbe Flecken.<br>
+                                <strong>Betroffene Pflanzen:</strong> Ficus, Orchideen, viele Zimmerpflanzen.<br>
+                                <strong>Lösung:</strong> Pflanze abduschen, Luftfeuchtigkeit erhöhen, bei starkem Befall Schädlingsmittel.
+                            </p>
+                            <span class="badge bg-danger">Schädling</span>
+                            <span class="badge bg-success">Zimmerpflanze</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-body">
+                            <h5 class="card-title text-danger">Wurzelfäule</h5>
+                            <p class="card-text">
+                                <strong>Symptome:</strong> Gelbe Blätter, weiche Wurzeln, übler Geruch.<br>
+                                <strong>Betroffene Pflanzen:</strong> Orchideen, Sukkulenten, viele Topfpflanzen.<br>
+                                <strong>Lösung:</strong> Erde trocknen lassen, ggf. umtopfen in frische Erde, Gießverhalten anpassen.
+                            </p>
+                            <span class="badge bg-warning text-dark">Pilzkrankheit</span>
+                            <span class="badge bg-info">Sukkulente</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
