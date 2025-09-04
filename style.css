@@ -33,7 +33,7 @@ h1, h5 {
 
 .card img {
   border-bottom: 3px solid #388e3c;
-  image-rendering: pixelated;
+  /* image-rendering: pixelated; */
 }
 
 /* Buttons / Badges */
@@ -72,3 +72,4 @@ h1, h5 {
 body, button, input, select {
   cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat795.cur), auto !important;
 }
+
