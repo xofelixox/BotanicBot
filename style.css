@@ -41,6 +41,7 @@ h1 {
 .card-body {
   padding-left: 0;
   padding-right: 0;
+  padding-bottom: 0;
 }
 
 .card-name {
@@ -102,3 +103,4 @@ h1 {
 body, button, input, select {
   cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat795.cur), auto !important;
 }
+
