@@ -4,7 +4,7 @@ body {
   color: #2f4f2f;
 }
 
-h1, h5 {
+h1 {
   color: #228b22;
   text-shadow: 2px 2px #c8e6c9;
 }
@@ -25,15 +25,45 @@ h1, h5 {
 
 /* Karten */
 .card {
-  border: 3px solid #388e3c;
-  border-radius: 0;
-  background-color: #fafafa;
-  box-shadow: 4px 4px #81c784;
+  border: 14px solid #bbbbbb;
+  border-radius: 7px;
+  background-image: url(grass.png);
+  box-shadow: 4px 4px #414141b0;
+  padding: 13px;
+}
+
+.custom-name {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  text-shadow: 2px 2px #c8e6c9;
+}
+
+.card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card-name {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.name-tag {
+  color: white;
+  background-color: red;
+  border-radius: 20px 0px 20px 0px;
+  padding: 3px 10px 0px 10px;
+  font-size: 0.8rem;
+}
+
+.name-title {
+    color: red;
 }
 
 .card img {
-  border-bottom: 3px solid #388e3c;
-  /* image-rendering: pixelated; */
+  border: 5px solid #c3c3c3;
+  box-shadow: 3px 3px #414141b0;
 }
 
 /* Buttons / Badges */
@@ -72,4 +102,3 @@ h1, h5 {
 body, button, input, select {
   cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat795.cur), auto !important;
 }
-
